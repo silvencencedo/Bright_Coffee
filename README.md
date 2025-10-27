@@ -2,8 +2,7 @@
 SELECT*
     FROM BRIGHT_COFFEE;
 
-    
---find the date range(months) for the data
+    --find the date range(months) for the data
 SELECT TRANSACTION_ID,
         MONTHNAME(TRANSACTION_DATE) AS MONTH_NAME,
         MIN(TRANSACTION_DATE) AS MIN_MONTH,
@@ -63,8 +62,6 @@ SELECT DISTINCT PRODUCT_CATEGORY,
         ORDER BY TOTAL_REVENUE DESC
         LIMIT 6;
 --Coffee is the number one selling product accross all outlets, with tea following behind at second place
-
-
 --product performance PER STORE , revenue important
 SELECT DISTINCT PRODUCT_CATEGORY,
 STORE_LOCATION,
@@ -77,8 +74,7 @@ ORDER BY TOTAL_REVENUE DESC;
 
 
 
-
-
+--Final DATA Selection SQL code
 
 SELECT STORE_LOCATION,
 TRANSACTION_DATE
